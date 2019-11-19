@@ -606,8 +606,9 @@ class Stacktrader extends Component {
                 color: "#63c2de",
                 display_name,
                 object_type: "ship"
+              }).then(_res => {
+                this.loadPlayer(entity_id, shard)
               })
-              this.loadPlayer(entity_id, shard)
             })
           })
         })
